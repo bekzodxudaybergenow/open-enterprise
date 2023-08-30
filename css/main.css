@@ -10,6 +10,22 @@ body {
   font-family: var(--Proxima-Nova);
   font-size: 18px;
   background-color: var(--GHOST-WHITE);
+  color: var(--DARK-CHARCOAL);
+}
+
+.container {
+  max-width: 1358px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @font-face {
