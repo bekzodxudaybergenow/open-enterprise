@@ -1,0 +1,31 @@
+.header {
+    padding: 40px 0 60px;
+}
+.header__row {
+    align-items: center;
+    justify-content: space-between;
+}
+.header--logo {
+    & img {
+        width: 281px;
+        height: 43px;
+        display: block;
+    }
+}
+.header__nav {
+    column-gap: 40px;
+}
+.header__nav--link {
+    font-weight: 400;
+    font-size: 20px;
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: var(--GREEN-SHEEN);
+    }
+
+    &.active {
+        font-weight: 700;
+        color: var(--GREEN-SHEEN);
+    }
+}

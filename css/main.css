@@ -82,4 +82,37 @@ body {
   --GHOST-WHITE: #F9F9F9;
   --ETON-BLUE: #81BFA8;
   --GRAY: #807E76;
+}
+
+.header {
+  padding: 40px 0 60px;
+}
+
+.header__row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header--logo img {
+  width: 281px;
+  height: 43px;
+  display: block;
+}
+
+.header__nav {
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+.header__nav--link {
+  font-weight: 400;
+  font-size: 20px;
+  transition: color 0.2s ease-in;
+}
+.header__nav--link:hover {
+  color: var(--GREEN-SHEEN);
+}
+.header__nav--link.active {
+  font-weight: 700;
+  color: var(--GREEN-SHEEN);
 }/*# sourceMappingURL=main.css.map */
