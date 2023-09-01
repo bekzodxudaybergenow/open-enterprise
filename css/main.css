@@ -133,6 +133,17 @@ a {
   color: var(--GREEN-SHEEN);
 }
 
+.header__menubtn {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+.header__menubtn svg {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
 @media only screen and (max-width: 1200px) {
   .header__nav {
     -moz-column-gap: 20px;
@@ -149,5 +160,8 @@ a {
 @media only screen and (max-width: 1024px) {
   .header__nav {
     display: none;
+  }
+  .header__menubtn {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

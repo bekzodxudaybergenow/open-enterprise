@@ -29,6 +29,17 @@
         color: var(--GREEN-SHEEN);
     }
 }
+.header__menubtn {
+    display: none;
+    background-color: transparent;
+    border: none;
+
+    & svg {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .header__nav {
@@ -45,5 +56,8 @@
 @media only screen and (max-width: 1024px) {
     .header__nav {
         display: none;
+    }
+    .header__menubtn {
+        display: block;
     }
 }
