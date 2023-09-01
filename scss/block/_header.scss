@@ -29,3 +29,21 @@
         color: var(--GREEN-SHEEN);
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .header__nav {
+        column-gap: 20px;
+    }
+    .header--logo img {
+        width: 240px;
+        height: 37px;
+    }    
+    .header__nav--link {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+}

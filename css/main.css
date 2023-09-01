@@ -131,4 +131,23 @@ a {
 .header__nav--link.active {
   font-weight: 700;
   color: var(--GREEN-SHEEN);
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__nav {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .header--logo img {
+    width: 240px;
+    height: 37px;
+  }
+  .header__nav--link {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header__nav {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
