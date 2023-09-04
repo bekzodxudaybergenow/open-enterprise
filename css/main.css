@@ -32,6 +32,11 @@ a {
   display: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @font-face {
   font-family: "Novel Mono Pro";
   src: url("/fonts/novel-mono-pro/NovelMonoPro-Regular.woff2") format("woff2"), url("/fonts/novel-mono-pro/NovelMonoPro-Regular.woff") format("woff");
