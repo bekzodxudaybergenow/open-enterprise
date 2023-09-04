@@ -1,5 +1,6 @@
 .header {
     padding: 40px 0 60px;
+    position: relative;
 }
 .header__row {
     align-items: center;
@@ -14,6 +15,30 @@
 }
 .header__nav {
     column-gap: 40px;
+
+    &.header__nav--active {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--GREEN-SHEEN);
+        height: 100vh;
+        width: 360px;
+        padding: 120px 60px 0 0;
+
+        & .header__nav--link {
+            display: block;
+            text-align: right;
+            font-weight: 700;
+            color: var(--DARK-CHARCOAL);
+            margin-bottom: 40px;
+            transition: opacity .2s ease;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
 }
 .header__nav--link {
     font-weight: 400;
@@ -31,14 +56,25 @@
 }
 .header__menubtn {
     display: none;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+    position: relative;
 
-    & svg {
-        display: block;
-        width: 30px;
-        height: 30px;
+    & path {
+        transition: opacity .2s ease
     }
+
+    &:hover {
+        path {
+            opacity: .8;
+        }
+    }
+}
+.header__menubtn--close {
+    display: none;
 }
 
 @media only screen and (max-width: 1200px) {
