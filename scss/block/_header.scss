@@ -5,6 +5,7 @@
 .header__row {
     align-items: center;
     justify-content: space-between;
+    column-gap: 10px;
 }
 .header--logo {
     & img {
@@ -93,5 +94,20 @@
     }
     .header__menubtn {
         display: block;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .header--logo img {
+        width: 220px;
+        height: 35px;
+    }
+    .header__menubtn {
+        width: 25px;
+        height: 25px;
+
+        & svg {
+            width: 25px;
+            height: 25px;       
+        }
     }
 }

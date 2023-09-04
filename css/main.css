@@ -117,6 +117,8 @@ img {
 .header__row {
   align-items: center;
   justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .header--logo img {
@@ -199,5 +201,19 @@ img {
   }
   .header__menubtn {
     display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header--logo img {
+    width: 220px;
+    height: 35px;
+  }
+  .header__menubtn {
+    width: 25px;
+    height: 25px;
+  }
+  .header__menubtn svg {
+    width: 25px;
+    height: 25px;
   }
 }/*# sourceMappingURL=main.css.map */
