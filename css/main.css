@@ -28,6 +28,10 @@ a {
   color: inherit;
 }
 
+.hidden {
+  display: none;
+}
+
 @font-face {
   font-family: "Novel Mono Pro";
   src: url("/fonts/novel-mono-pro/NovelMonoPro-Regular.woff2") format("woff2"), url("/fonts/novel-mono-pro/NovelMonoPro-Regular.woff") format("woff");
@@ -120,27 +124,6 @@ a {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
-.header__nav.header__nav--active {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: var(--GREEN-SHEEN);
-  height: 100vh;
-  width: 360px;
-  padding: 120px 60px 0 0;
-}
-.header__nav.header__nav--active .header__nav--link {
-  display: block;
-  text-align: right;
-  font-weight: 700;
-  color: var(--DARK-CHARCOAL);
-  margin-bottom: 40px;
-  transition: opacity 0.2s ease;
-}
-.header__nav.header__nav--active .header__nav--link:hover {
-  opacity: 0.8;
-}
 
 .header__nav--link {
   font-weight: 400;
@@ -171,10 +154,6 @@ a {
   opacity: 0.8;
 }
 
-.header__menubtn--close {
-  display: none;
-}
-
 @media only screen and (max-width: 1200px) {
   .header__nav {
     -moz-column-gap: 20px;
@@ -191,6 +170,27 @@ a {
 @media only screen and (max-width: 1024px) {
   .header__nav {
     display: none;
+  }
+  .header__nav.header__nav--active {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--GREEN-SHEEN);
+    height: 100vh;
+    width: 360px;
+    padding: 120px 60px 0 0;
+  }
+  .header__nav.header__nav--active .header__nav--link {
+    display: block;
+    text-align: right;
+    font-weight: 700;
+    color: var(--DARK-CHARCOAL);
+    margin-bottom: 40px;
+    transition: opacity 0.2s ease;
+  }
+  .header__nav.header__nav--active .header__nav--link:hover {
+    opacity: 0.8;
   }
   .header__menubtn {
     display: block;
