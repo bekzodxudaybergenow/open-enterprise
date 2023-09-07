@@ -31,3 +31,21 @@ img {
     max-width: 100%;
     height: auto;
 }
+.btn {
+    font-family: var(--Proxima-Nova);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--WHITE);
+    padding: 20px 24px;
+    border-radius: 8px;
+    background-color: var(--GREEN-SHEEN);
+    transition: opacity .2s ease;
+
+    &:hover {
+        opacity: .8;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
