@@ -55,6 +55,11 @@ img {
   opacity: 1;
 }
 
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 1275px;
+  }
+}
 @font-face {
   font-family: "Novel Mono Pro";
   src: url("/fonts/novel-mono-pro/NovelMonoPro-Regular.woff2") format("woff2"), url("/fonts/novel-mono-pro/NovelMonoPro-Regular.woff") format("woff");
