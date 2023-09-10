@@ -134,8 +134,10 @@ img {
 }
 
 .header {
+  position: fixed;
   padding: 40px 0 60px;
-  position: relative;
+  width: 100%;
+  transition: background-color 0.2s ease;
 }
 
 .header__row {

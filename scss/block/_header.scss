@@ -1,6 +1,9 @@
 .header {
+    position: fixed;
     padding: 40px 0 60px;
-    position: relative;
+    width: 100%;
+    transition: background-color .2s ease;
+
 }
 .header__row {
     align-items: center;
