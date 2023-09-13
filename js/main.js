@@ -10,11 +10,10 @@ const headerMenuBtnClose = document.querySelector('.header__menubtn--close');
 
 window.addEventListener('scroll', (e) => {
     if(window.pageYOffset > 0) {
-        header.style.backgroundColor = '#81BFA8';
-        // headerNavLink.addEventLis
+        header.classList.add('header__shadow');
     }
     else {
-        header.style.backgroundColor = 'inherit';
+        header.classList.remove('header__shadow');
     }
 })
 

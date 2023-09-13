@@ -4,6 +4,10 @@
     width: 100%;
     transition: background-color .2s ease;
 
+    &.header__shadow {
+        background-color: var(--WHITE);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    }
 }
 .header__row {
     align-items: center;

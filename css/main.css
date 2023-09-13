@@ -139,6 +139,10 @@ img {
   width: 100%;
   transition: background-color 0.2s ease;
 }
+.header.header__shadow {
+  background-color: var(--WHITE);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 .header__row {
   align-items: center;
@@ -246,6 +250,7 @@ img {
 .hero {
   padding-top: 162px;
 }
+
 .hero__row {
   display: flex;
   align-items: center;
@@ -278,9 +283,6 @@ img {
 }
 
 @media only screen and (max-width: 1366px) {
-  .hero {
-    margin-top: 20px;
-  }
   .hero__row {
     min-height: 620px;
     background-size: 700px 620px;
