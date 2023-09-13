@@ -371,4 +371,122 @@ img {
     min-height: 658px;
   }
 }
+.advantage {
+  padding-top: 198px;
+}
+
+.advantage__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantage--title {
+  max-width: 895px;
+  font-family: var(--BelyDisplay);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  margin-bottom: 24px;
+}
+
+.advantage--desc {
+  max-width: 898px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.advantage__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  list-style: none;
+}
+
+.advantage__list--item {
+  max-width: 427px;
+  text-align: center;
+  padding: 64px 24px;
+  background-color: var(--WHITE);
+}
+
+.advantage__item--icon {
+  width: 104px;
+  height: 88px;
+  margin-bottom: 24px;
+}
+
+.advantage__item--title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  color: var(--DARK-CHARCOA);
+}
+
+.advantage__item--desc {
+  line-height: 24px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .advantage {
+    padding-top: 126px;
+  }
+  .advantage__list--item {
+    padding: 64px 40px;
+  }
+  .advantage__item--title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .advantage__item--desc {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .advantage__list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+}
+@media only screen and (max-width: 866px) {
+  .advantage {
+    padding-top: 82px;
+  }
+  .advantage--desc {
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .advantage {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .advantage {
+    padding-top: 0;
+  }
+  .advantage--title {
+    font-size: 44px;
+    line-height: 60px;
+    margin-bottom: 16px;
+  }
+  .advantage--desc {
+    font-size: 16px;
+  }
+  advantage__list--item {
+    padding: 50px 12px;
+  }
+  .advantage__item--icon {
+    width: 91px;
+    height: 76px;
+    margin-bottom: 12px;
+  }
+  .advantage__item--title {
+    margin-bottom: 6px;
+  }
 }/*# sourceMappingURL=main.css.map */
