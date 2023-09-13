@@ -13,6 +13,10 @@ body {
   color: var(--DARK-CHARCOAL);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 .container {
   max-width: 1358px;
   width: 100%;
