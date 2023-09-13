@@ -103,8 +103,18 @@
         padding: 12px 10px;
     }
 }
+@media only screen and (max-width: 425px) {
+    .hero__row {
+        min-height: 700px;
+    }
+}
 @media only screen and (max-width: 405px) {
     .hero__row {
         background-position: -22px 350px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .hero__row {
+        min-height: 658px;
     }
 }
