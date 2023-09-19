@@ -1,0 +1,68 @@
+.info {
+    padding-top: 160px;
+}
+.info__row {
+}
+.info__founders {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+}
+.founders__content {
+    max-width: 644px;
+}
+.founder__content--icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+}
+.founders__box {
+    max-width: 484px;
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--GREEN-SHEEN);
+    border-radius: 16px;
+}
+.founders__box--inner {
+    transform: translate(-16px, -16px)
+}
+.founders__box--subtitle {
+    font-family: var(--Nove-Mono-Pro);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--DARK-CHARCOAL);
+    margin-bottom: 32px;
+}
+.founders__box--list {
+    list-style: none;
+}
+.founders__list--item {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    & + * {
+        margin-top: 24px;
+    }
+}
+.founders__item--picture {
+    width: 72px;
+    height: 72px;
+}
+.founders__item--name {
+    font-family: var(--Nove-Mono-Pro);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+    margin-bottom: 4px;
+}
+.founder__item--numberofshares {
+    font-family: var(--Nove-Mono-Pro);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+    color: var(--GRANITE-GRAY);
+}
