@@ -66,3 +66,69 @@
     letter-spacing: -0.32px;
     color: var(--GRANITE-GRAY);
 }
+
+.info__investors {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+}
+.investors__box {
+    max-width: 484px;
+    font-family: var(--Nove-Mono-Pro);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.32px;
+}
+.investors__box--person {
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 24px;
+}
+.investor__person--picture {
+    width: 72px;
+    height: 72px;
+}
+.investors__person--name {
+    font-family: var(--Nove-Mono-Pro);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.32px;
+    margin-bottom: 8px;
+}
+.investors__person--direction {
+    font-size: 16px;
+}
+.investors__box--desc {
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+.investors__box--action {
+    display: flex;
+    gap: 74px;
+    margin-bottom: 32px;
+}
+.investors__commit--subtitle,
+.investors__shares--subtitle {
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.investors__commit--amount,
+.investors__shares--amount {
+    font-weight: 600;
+}
+.investors__box--btn {
+    width: 100%;
+    text-align: center;
+    transition: opacity ease .2s;
+
+    &:hover {
+        opacity: .9;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
+.investors__content {
+    max-width: 644px;
+}
