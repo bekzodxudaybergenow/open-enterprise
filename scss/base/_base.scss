@@ -64,6 +64,26 @@ img {
     padding: 12px 80px;
     border-radius: 16px;
 }
+.circle-btn {
+    display: inline-block;
+    font-family: var(--Nove-Mono-Pro);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--WHITE);
+    background-color: var(--GREEN-SHEEN);
+    padding: 4px 8px;
+    border-radius: 40px;
+    transition: opacity .2s ease;
+
+    &:hover {
+        opacity: .9;
+    }
+    &:active {
+        opacity: 1;
+    }
+}
 .title {
     font-family: var(--BelyDisplay);
     font-weight: 400;
