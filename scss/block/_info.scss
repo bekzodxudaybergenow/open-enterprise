@@ -132,3 +132,67 @@
 .investors__content {
     max-width: 644px;
 }
+
+// .info__contributors 
+.info__contributors {
+    justify-content: space-between;
+}
+.contributors__content {
+    max-width: 644px;
+}
+.contributors__boxs {
+    display: grid;
+    grid-template-columns: 644px;
+    // grid-template-rows: 163px 312px;
+}
+.contributors__boxs--share {
+    width: 560px;
+    height: 164px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+.contributers__share--inner {
+}
+.contributors__share--subtitle {
+}
+.contributers__share--btn {
+}
+.contributors__share--desc {
+}
+.contributors__boxs--applicants {
+    max-width: 381px;
+}
+.contributors__applicants--subtitle {
+}
+.contributors__applicants--list {
+}
+.applicants__list--item {
+}
+.applicants__item--picture {
+}
+.applicants__item--name {
+}
+.applicants__item--rating {
+}
+.applicants__rating--icon {
+}
+.applicants__rating--number {
+}
+.contributors__box--profile {
+    max-width: 240px;
+    padding: 24px;
+}
+.contributors__profile--picture {
+}
+.contributors__profile--name {
+}
+.contributors__profile--profession {
+}
+.contributors__profile--commits {
+}
+.contributors__commit--text {
+}
+.contributors__commit--ratingIcon {
+}
+.contributors__commit--rating {
+}

@@ -701,4 +701,33 @@ img {
 
 .investors__content {
   max-width: 644px;
+}
+
+.info__contributors {
+  justify-content: space-between;
+}
+
+.contributors__content {
+  max-width: 644px;
+}
+
+.contributors__boxs {
+  display: grid;
+  grid-template-columns: 644px;
+}
+
+.contributors__boxs--share {
+  width: 560px;
+  height: 164px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.contributors__boxs--applicants {
+  max-width: 381px;
+}
+
+.contributors__box--profile {
+  max-width: 240px;
+  padding: 24px;
 }/*# sourceMappingURL=main.css.map */
