@@ -1,8 +1,8 @@
 .info {
     padding-top: 160px;
 }
-.info__row {
-}
+
+// info__founder
 .info__founders {
     justify-content: space-between;
     align-items: center;
@@ -67,6 +67,7 @@
     color: var(--GRANITE-GRAY);
 }
 
+// info__investors
 .info__investors {
     justify-content: space-between;
     align-items: center;
@@ -142,57 +143,129 @@
 }
 .contributors__boxs {
     display: grid;
-    grid-template-columns: 644px;
-    // grid-template-rows: 163px 312px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 163px 312px;
+    justify-items: center;
+    column-gap: 12px;
+    row-gap: 19px;
+    max-width: 644px;
+    width: 100%;
+    font-family: var(--Nove-Mono-Pro);
+    line-height: 24px;
+    letter-spacing: 0.32px;
 }
 .contributors__boxs--share {
-    width: 560px;
+    grid-column: 1/3;
+    justify-self: center;
+    max-width: 560px;
+    width: 100%;
     height: 164px;
+    position: relative;
     padding: 24px;
     margin-bottom: 24px;
+
+    &::before {
+        content: '';
+        max-width: 544px;
+        width: 100%;
+        height: 164px;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        border-radius: 16px;
+        background-color: var(--GREEN-SHEEN);
+        z-index: -1;
+    }
 }
 .contributers__share--inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
 }
 .contributors__share--subtitle {
-}
-.contributers__share--btn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
 }
 .contributors__share--desc {
+    max-width: 427px;
+    font-size: 16px;
+    font-weight: 400;
 }
 .contributors__boxs--applicants {
     max-width: 381px;
+    width: 100%;
+    background-color: var(--ISABELLINE);
 }
 .contributors__applicants--subtitle {
-}
-.contributors__applicants--list {
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 24px;
 }
 .applicants__list--item {
+    display: flex;
+    align-items: center;
+}
+.applicants__list--item + *{
+    margin-top: 24px;
 }
 .applicants__item--picture {
+    width: 40px;
+    height: 40px;
 }
 .applicants__item--name {
+    font-weight: 600;
+    margin-left: 16px;
+    font-size: 20px;
 }
 .applicants__item--rating {
-}
-.applicants__rating--icon {
+    margin-left: auto;
 }
 .applicants__rating--number {
+    font-weight: 600;
+    font-size: 20px;
 }
 .contributors__box--profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 240px;
+    width: 100%;
     padding: 24px;
+    border-color: var(--GREEN-SHEEN);
 }
 .contributors__profile--picture {
+    border-radius: 50px;
+    margin-bottom: 16px;
 }
 .contributors__profile--name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 4px;
 }
 .contributors__profile--profession {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 .contributors__profile--commits {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
 }
 .contributors__commit--text {
+    font-size: 16px;
 }
 .contributors__commit--ratingIcon {
+    margin-left: auto;
 }
 .contributors__commit--rating {
+    font-size: 20px;
+}
+.contributors__profile--btn {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 32px;
 }
