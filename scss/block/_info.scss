@@ -269,3 +269,96 @@
     line-height: 20px;
     padding: 12px 32px;
 }
+@media  screen and (max-width: 1366px) {
+    .founders__content,
+    .investors__content,
+    .contributors__content {
+        max-width: 590px;
+    }
+    .founders__box {
+        max-width: 470px;
+    }
+    .investors__box {
+        max-width: 465px;
+    }
+}
+@media  screen and (max-width: 1292px) {
+    .info__founders ,
+    .info__investors,
+    .info__contributors {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 120px 120px;
+    }
+    .founders__content,
+    .investors__content,
+    .contributors__content {
+        max-width: 644px;
+        margin-bottom: 60px;
+    }
+    .investors__content {
+        order: 1;
+    }
+    .investors__box {
+        order: 2;
+    }
+    .contributors__boxs--share {
+        justify-self: self-start;
+    }
+}
+@media  screen and (max-width: 1024px) {
+    .info__founders ,
+    .info__investors,
+    .info__contributors {
+        margin: 0 0 120px 0;
+    }
+    .founders__box {
+        margin-left: 16px;
+    }
+}
+@media  screen and (max-width: 680px) {
+    .contributors__boxs {
+        grid-template-columns: auto;
+        grid-template-rows: 163px 306px 174px;
+        justify-items: flex-start;
+    }
+    .contributors__boxs--share {
+        grid-column: 1/2;
+        min-height: 163px;
+    }
+    .contributors__boxs--applicants {
+        max-width: 560px;
+    }
+    .contributors__box--profile {
+        display: grid;
+        grid-template-columns: 82px auto auto;
+        grid-template-rows: 36px 36px 44px;
+        align-content: center;
+        max-width: 560px;
+    }
+    .contributors__profile--picture {
+        grid-row: 1/3;
+        margin: 0;
+    }
+    .contributors__profile--name {
+        margin: 0;
+    }
+    .contributors__profile--profession {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin: 0;
+    }
+    .contributors__profile--commits {
+        justify-content: flex-end;
+        margin: 0;
+    }
+    .contributors__commit--ratingIcon {
+        margin-left: 18px;
+    }
+    .contributors__profile--btn {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        max-width: 214px;
+        margin-top: 22px;
+    }
+}
