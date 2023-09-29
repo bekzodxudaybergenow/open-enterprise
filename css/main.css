@@ -748,7 +748,7 @@ img {
   justify-self: center;
   max-width: 560px;
   width: 100%;
-  height: 164px;
+  min-height: 164px;
   position: relative;
   padding: 24px;
   margin-bottom: 24px;
@@ -757,7 +757,8 @@ img {
   content: "";
   max-width: 544px;
   width: 100%;
-  height: 164px;
+  min-height: 164px;
+  height: 100%;
   position: absolute;
   top: 3px;
   left: 4px;
@@ -793,6 +794,7 @@ img {
 
 .contributors__applicants--subtitle {
   font-weight: 600;
+  font-size: 32px;
   line-height: 32px;
   margin-bottom: 24px;
 }
@@ -870,6 +872,7 @@ img {
 
 .contributors__commit--rating {
   font-size: 20px;
+  margin-left: 8px;
 }
 
 .contributors__profile--btn {
@@ -928,12 +931,15 @@ img {
 @media screen and (max-width: 680px) {
   .contributors__boxs {
     grid-template-columns: auto;
-    grid-template-rows: 163px 306px 174px;
+    grid-template-rows: auto auto auto;
     justify-items: flex-start;
   }
   .contributors__boxs--share {
     grid-column: 1/2;
-    min-height: 163px;
+  }
+  .contributors__boxs--share::before {
+    top: 10px;
+    left: 0px;
   }
   .contributors__boxs--applicants {
     max-width: 560px;
@@ -969,5 +975,33 @@ img {
     grid-row: 3/4;
     max-width: 214px;
     margin-top: 22px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .contributors__box--profile {
+    grid-template-columns: 82px auto;
+  }
+  .contributors__profile--commits {
+    justify-content: flex-start;
+    grid-row: 3/4;
+    grid-column: 1/3;
+    margin: 12px 0 0 10px;
+  }
+  .contributors__profile--btn {
+    grid-row: 4/5;
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .contributors__boxs--applicants {
+    padding: 24px;
+  }
+  .applicants__item--name {
+    font-size: 18px;
+    margin-left: 12px;
+  }
+  .contributors__applicants--subtitle {
+    font-size: 28px;
+    margin-bottom: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
