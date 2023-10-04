@@ -1,0 +1,55 @@
+.start {
+    position: relative;
+    padding-top: 160px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 44px;
+        left: 0;
+        background: url('/img/start/divider.svg');
+        background-repeat: repeat-x;
+        height: 72px;
+        width: 100%;
+    }
+}
+.start__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+.start__content {
+    max-width: 644px;
+}
+.start__content--desc {
+    margin-bottom: 40px;
+}
+.start__content--btn {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1200px)  {
+    .start__content {
+        max-width: 560px;
+    }
+    .start__content--btn {
+        padding: 16px 18px;
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .start__row {
+        flex-wrap: wrap;
+        row-gap: 80px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .start__row {
+        row-gap: 60px;
+    }
+    .start__content--btn {
+        padding: 14px 16px;
+        font-size: 16px;
+    }
+}
